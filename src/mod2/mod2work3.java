@@ -1,5 +1,5 @@
 package mod2;
-import mod2.mod2work2;
+import mod2.mod2work3;
 public class mod2work3  {
 
 

@@ -2,8 +2,8 @@ package mod2;
 public class mod2work2 {
     public static void main(String[] args) {
         //
-        int balance =1500;
-        int withdrawal =100;
+        int balance = 1500;
+        int withdrawal = 100;
 
 
         if(withdrawal +(withdrawal / 100 * 5) > balance)
