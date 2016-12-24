@@ -1,4 +1,4 @@
-package mod3;
+package mod3.work1;
 
 
 public class Solution {
