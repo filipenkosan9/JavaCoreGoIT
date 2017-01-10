@@ -10,8 +10,8 @@ private int rating;
         super(firstName, lastName, group);
     }
 
-    public CollegeStudent(Course[] coursesTaken) {
-        super(coursesTaken);
+    public CollegeStudent(String lastName, Course[] coursesTaken) {
+        super(lastName, coursesTaken);
     }
 
     public long getId() {

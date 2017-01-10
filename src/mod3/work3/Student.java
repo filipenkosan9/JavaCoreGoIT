@@ -6,6 +6,9 @@ public class Student {
     private String firstName;
     private String lastName;
     private int group;
+    private int age;
+
+
     private Course[] coursesTaken;
 
     public Student(String firstName, String lastName, int group) {
@@ -14,9 +17,13 @@ public class Student {
         this.group = group;
     }
 
-    public Student(Course[] coursesTaken) {
+    public Student(String lastName, Course[] coursesTaken) {
         this.coursesTaken = coursesTaken;
+        this.lastName = lastName;
     }
+
+
+
 
     public int getAge() {
         return age;
@@ -58,7 +65,6 @@ public class Student {
         this.coursesTaken = coursesTaken;
     }
 
-    private int age;
 
 
 }
