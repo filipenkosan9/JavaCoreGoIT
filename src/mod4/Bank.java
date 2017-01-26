@@ -1,4 +1,4 @@
-package mod4.work1;
+package mod4;
 
 
 import java.util.Currency;
