@@ -13,8 +13,6 @@ public class EUBank extends Bank {
         super(id, bankCountry, currency, numberOfEmployees, avrSalaryOfEmployee, rating, totalCapital);
     }
 
-    /*EUBank:
-            */
     @Override
     int getLimitOfWithdrawal() {
         int limit = 0;

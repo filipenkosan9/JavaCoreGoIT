@@ -5,6 +5,14 @@ import java.util.Currency;
 
 public abstract class Bank {
 
+    private long id;
+    private String bankCountry;
+    private Currency currency;
+    private int numberOfEmployees;
+    private double avrSalaryOfEmployee;
+    private long rating;
+    private long totalCapital;
+
     public Bank(long id, String bankCountry, Currency currency, int numberOfEmployees, double avrSalaryOfEmployee, long rating, long totalCapital) {
         this.id = id;
         this.bankCountry = bankCountry;
@@ -15,17 +23,12 @@ public abstract class Bank {
         this.totalCapital = totalCapital;
     }
 
-    private long id;
-   private String bankCountry;
-   private Currency currency;
-   private int numberOfEmployees;
-   private double avrSalaryOfEmployee;
-   private long rating;
-   private long totalCapital;
-
     abstract int getLimitOfWithdrawal();
+
     abstract int getLimitOfFunding();
+
     abstract int getMonthlyRate();
+
     abstract int getCommission(int summ);
 
     double moneyPaidMonthlyForSalary() {
