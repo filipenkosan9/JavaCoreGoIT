@@ -9,8 +9,8 @@ import static mod4.Currency.USD;
  * Created by Alex on 20.01.2017.
  */
 public class EUBank extends Bank {
-    public EUBank(long id, String bankCountry, java.util.Currency currency, int numberOfEmployees, double avrSalaryOfEmployee, long rating, long totalCapital) {
-        super(id, bankCountry, currency, numberOfEmployees, avrSalaryOfEmployee, rating, totalCapital);
+    public EUBank(long id, String bankCountry, int numberOfEmployees, double avrSalaryOfEmployee, long rating, long totalCapital) {
+        super(id, bankCountry, numberOfEmployees, avrSalaryOfEmployee, rating, totalCapital);
     }
 
     @Override

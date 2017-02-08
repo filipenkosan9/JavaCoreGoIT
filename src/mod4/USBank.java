@@ -9,9 +9,11 @@ import static mod4.Currency.USD;
 public class USBank extends Bank {
 
 
-    public USBank(long id, String bankCountry, java.util.Currency currency, int numberOfEmployees, double avrSalaryOfEmployee, long rating, long totalCapital) {
-        super(id, bankCountry, currency, numberOfEmployees, avrSalaryOfEmployee, rating, totalCapital);
+    public USBank(long id, String bankCountry, int numberOfEmployees, double avrSalaryOfEmployee, long rating, long totalCapital) {
+        super(id, bankCountry, numberOfEmployees, avrSalaryOfEmployee, rating, totalCapital);
     }
+
+
 
     @Override
     int getLimitOfWithdrawal() {

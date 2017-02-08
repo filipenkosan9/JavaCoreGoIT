@@ -18,7 +18,7 @@ public class BankSystemImpl implements BankSystem{
     public void fundUser(User user, int amount) {
     Bank userBank = user.getBank();
         if (amount <= userBank.getLimitOfFunding() ) System.out.println("Ok");
-        else System.out.println("Symma very big");
+        else System.out.println("Summa very big");
 
     }
 

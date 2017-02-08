@@ -13,7 +13,7 @@ public abstract class Bank {
     private long rating;
     private long totalCapital;
 
-    public Bank(long id, String bankCountry, Currency currency, int numberOfEmployees, double avrSalaryOfEmployee, long rating, long totalCapital) {
+    public Bank(long id, String bankCountry, int numberOfEmployees, double avrSalaryOfEmployee, long rating, long totalCapital) {
         this.id = id;
         this.bankCountry = bankCountry;
         this.currency = currency;
@@ -90,4 +90,7 @@ public abstract class Bank {
     public void setTotalCapital(long totalCapital) {
         this.totalCapital = totalCapital;
     }
+
+
+
 }
