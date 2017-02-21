@@ -91,6 +91,4 @@ public abstract class Bank {
         this.totalCapital = totalCapital;
     }
 
-
-
 }
