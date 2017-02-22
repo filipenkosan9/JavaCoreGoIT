@@ -14,18 +14,40 @@ public class BookingComAPI implements API{
         Room room3 = new Room(3, 600, 3, new Date(),"Pencilvania", "New - York");
         Room room4 = new Room(4, 700, 4, new Date(),"Pencilvania", "New - York");
         Room room5 = new Room(5, 900, 6, new Date(),"Pencilvania", "New - York");
-
         rooms[0] = room;
         rooms[1] = room2;
         rooms[2] = room3;
-        rooms[3] = room4;
+        rooms[3] = room2;
         rooms[4] = room5;
-        rooms[7] = room4;
+
 }
 
     @Override
     public Room[] findRooms(int price, int persons, String city, String hotel) {
-        return new Room[0];
+        int countRooms = 0;
 
+        for (int i = 0; i < rooms.length; i++) {
+            if (rooms[i].getPrice()  == price )
+              if (rooms[i].getPersons() == persons)
+                  if( rooms[i].getCityName() == city)
+                      if(rooms[i].getHotelName() == hotel){
+                        countRooms++;
             }
+        }
+
+        Room[] result = new Room[countRooms];
+
+        int index = 0;
+        for (int i = 0; i < rooms.length; i++) {
+            if (rooms[i].getPrice()  == price )
+                if (rooms[i].getPersons() == persons)
+                    if( rooms[i].getCityName() == city)
+                        if(rooms[i].getHotelName() == hotel){
+                            result[index] = rooms[i];
+                            index++;
+                        }
+        }
+
+        return result;
+        }
     }

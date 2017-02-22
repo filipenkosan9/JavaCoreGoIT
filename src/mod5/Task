@@ -1,36 +1,3 @@
-You need to create part of the System that can find hotel rooms for booking and save it to DataBase.
-The architecture is:
-class Room which represent room entity that is used in system.
-Interface API and three implementations of it.
-DAO interface with its implementation.
-And finally Controller that will contain all the logic.
-Also create Main class with main method to demonstrate results.
-
-Create UML diagrams first, and only after this write code.
-
-ЗАДАНИЕ 1
-Class Room should contain fields
-long id
-int price
-int persons
-Date dateAvailableFrom
-String hotelName
-String cityName
-Generate getters and setters. And create constructor with all fields.
-
-ЗАДАНИЕ 2
-Override equals and hashCode methods.
-Rooms are equal when price, persons and cityName are equal.
-
-ЗАДАНИЕ 3
-Create API interface which contains one method
-Room[] findRooms(int price, int persons, String city, String hotel)
-
-ЗАДАНИЕ 4
-
-Create three implementations of API called: BookingComAPI, TripAdvisorAPI, GoogleAPI.
-Every implementation has global variable Room[] rooms which must be initialized in empty constructor with 5 differentRooms.
-
 
 ЗАДАНИЕ 5
 Create DAO interface and its implementation. Methods print operation name and object which was used.
@@ -45,7 +12,8 @@ API apis[] = new API[3];
 which contains all impelentations of API interface.
 Also, controller contains two methods
 Room[] requstRooms(int price, int persons, String city, String hotel)
-which finds all the rooms with requested params. Method use all apis available to make search.
+which finds all the rooms with requested params.
+Method use all apis available to make search.
 Found rooms create to DB
 
 Room[] check(API api1, API api2)
